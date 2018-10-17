@@ -1,6 +1,6 @@
 spring:
   application:
-    name: server3
+    name: eureka-server
 server:
   port: 8003 # tomcat 端口 server1
 eureka:
