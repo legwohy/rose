@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-eureka
+    name: server3
 server:
   port: 8003 # tomcat 端口 server1
 eureka:
@@ -9,5 +9,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://peer1:8001/eureka/,http://peer2:8002/eureka/
-    #register-with-eureka: false # 表示是否注册本身到 eureka服务器
-    #fetch-registry: false # 是否从eureka上获取注册信息
+      register-with-eureka: false # 表示是否注册本身到 eureka服务器
+      fetch-registry: false # 是否从eureka上获取注册信息

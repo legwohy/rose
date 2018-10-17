@@ -1,9 +1,10 @@
 spring:
   application:
-    name: spring-cloud-client
+    name: client
 server:
   port: 8004 # tomcat 端口 server1
 
 eureka:
   client:
-    service-url: http://peer1:8001/eureka/
+    service-url:
+      defaultZone:  http://peer2:8001/eureka/
